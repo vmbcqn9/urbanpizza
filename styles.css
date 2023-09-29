@@ -81,6 +81,7 @@ main {
 @media screen and (max-width: 768px) {
     .custom-nav  {
         display: none;
+        font-size: 13px;
     }
     
     .logo {
@@ -90,7 +91,6 @@ main {
 
     .hb {
         display: block;
-        
         font-size: 30px; /* Adjust the font size for the hamburger icon */
        position: absolute;
        right: 0;
@@ -100,7 +100,9 @@ main {
         text-decoration: none;
     }
    
-   
+   .body{
+    overflow: hidden;
+   }
 
   
 }
