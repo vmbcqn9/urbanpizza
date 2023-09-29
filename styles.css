@@ -135,7 +135,7 @@ main {
 @media (max-width: 768px) {
     
     .intro-container video {
-        height: auto;
+        height: 350px;
     }
     
     
