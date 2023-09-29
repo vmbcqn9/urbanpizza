@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-  function toggleNav() {
+    function toggleNav() {
     var navMenu = document.getElementById("navMenu");
+    var logo = document.querySelector('.logo');
+
     if (navMenu.style.display === "flex") {
         navMenu.style.display = "none";
+        logo.style.display = "block";  // Show the logo when closing the nav
     } else {
         navMenu.style.display = "flex";
+        logo.style.display = "none";   // Hide the logo when opening the nav
     }
 }
 
@@ -40,6 +44,7 @@ $(document).ready(function () {
     <img src="urban.png" class="logo" alt="Logo" width="auto" height="100px">
     <div class="hb" onclick="toggleNav()">
         <a href="#">&#9776;</a>
+      </div>
     </div>
     <nav class="custom-nav" id="navMenu">
       <ul>
