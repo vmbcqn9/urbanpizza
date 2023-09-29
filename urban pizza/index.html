@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  function toggleNav() {
+    var navMenu = document.getElementById("navMenu");
+    if (navMenu.style.display === "flex") {
+        navMenu.style.display = "none";
+    } else {
+        navMenu.style.display = "flex";
+    }
+}
+
+$(document).ready(function () {
+            $("a").on("click", function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+
+</script>
+   
+</head>
+<body>
+  <header>
+    <img src="urban.png" class="logo" alt="Logo" width="auto" height="100px">
+    <div class="hb" onclick="toggleNav()">
+        <a href="#">&#9776;</a>
+    </div>
+    <nav class="custom-nav" id="navMenu">
+      <ul>
+          <li><a href="#Accueil" class="active">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+  
+</header>
+
+    <main>
+        <div class="intro-container">
+         
+           <video autoplay muted loop>
+                <source src="pizza_-_80139 (1080p).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+           
+        </div>
+
+        <div class="NosPr">
+          <h1 class="NB">Nos Produits</h1>
+          <div class="texte">
+<p>Chez Urban Pizza, la fraîcheur est notre engagement. Chaque ingrédient, soigneusement sélectionné, est d'origine française et choisi pour sa qualité exceptionnelle. De plus, pour répondre aux besoins et aux préférences de tous nos clients, nous proposons une gamme de viandes halal garanties, ainsi que des options végétariennes et vegan. Cela assure une expérience culinaire délicieuse et inclusive, où chacun peut trouver son bonheur. Venez savourer nos créations authentiques, préparées avec passion et dévouement, pour une expérience gustative qui réjouira vos papilles et vous fera revenir pour plus de délices à chaque bouchée.</p>
+          </div>
+         
+        </div>
+
+
+        <div class="presentation">
+          <h1 class="NB">Nos Best-sellers</h1>
+         <div class="card-container">
+          <!-- Add this inside the .card-container -->
+<div class="card">
+  <img src="DALL·E 2023-09-22 19.22.04 - pizza.png" alt="Card Image">
+  <div class="card-content">
+    <h3 class="card-title">Pizza pepperoni</h3>
+    <p class="card-description"><span>Ingrédient : </span> Sauce tomate, pepperoni, poivron, mozarella</p>
+    <a href="#" class="card-button">En savoir plus</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="DALL·E 2023-09-22 19.21.58 - pizza.png" alt="Card Image">
+  <div class="card-content">
+    <h3 class="card-title">Pizza Jambon</h3>
+    <p class="card-description"><span>Ingrédient : </span> Sauce tomate, poivron, mozarella</p>
+    <a href="#" class="card-button">En savoir plus</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="DALL·E 2023-09-22 19.22.09 - pizza.png" alt="Card Image">
+  <div class="card-content">
+    <h3 class="card-title">Pizza Margherita </h3>
+    <p class="card-description"><span>Ingrédient : </span> Sauce tomate, jambom, poivron, mozarella</p>
+    <a href="#" class="card-button">En savoir plus</a>
+  </div>
+</div>
+      </div>
+      <div class="bs">
+      <a href="#Menu">Voir toutes nos pizzas</a>
+    </div>
+
+
+        </div>
+
+          <div class="info" id="contact">
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80985.22192321207!2d2.96449759971734!3d50.63105154441006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille!5e0!3m2!1sfr!2sfr!4v1695288365980!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="coordonnées">
+              <h1>Coordonnées</h1>
+              <p><span>Adresse : </span> Lille, France</p>
+              <p><span>Tél :</span> 03 20 00 00 00</p>
+              <p><span>Ouvert tous les jours</span></p>
+              <p><span>Horaire :</span> 11:00 - 23:30</p>
+             
+            </div>
+         
+        </div>
+        
+        
+        </div>   
+            
+    </main>
+    <footer>
+      <div class="contact-info">
+          <p><span>Tél : </span> 03 20 00 00 00</p>
+          <p><span>Horaire :</span> 11:00 - 23:30</p>
+      </div>
+      
+      <div class="social-media">
+          <a href="#" class="social-icon" target="_blank" ><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/shacorp_/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+  
+      <div class="copyright">
+          &copy; 2023 SHACORP. All rights reserved.
+      </div>
+  </footer>
+    
+</body>
+</html>
