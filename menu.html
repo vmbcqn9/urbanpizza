@@ -10,13 +10,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         function toggleNav() {
-            var navMenu = document.getElementById("navMenu");
-            if (navMenu.style.display === "flex") {
-                navMenu.style.display = "none";
-            } else {
-                navMenu.style.display = "flex";
-            }
-        }
+    var navMenu = document.getElementById("navMenu");
+    var logo = document.querySelector('.logo');
+
+    if (navMenu.style.display === "flex") {
+        navMenu.style.display = "none";
+        logo.style.display = "block";  // Show the logo when closing the nav
+    } else {
+        navMenu.style.display = "flex";
+        logo.style.display = "none";   // Hide the logo when opening the nav
+    }
+}
+
     
         $(document).ready(function () {
             $("a").on("click", function (event) {
@@ -150,6 +155,7 @@ main {
 @media screen and (max-width: 768px) {
     .custom-nav  {
         display: none;
+        font-size: 13px;
     }
     
     .logo {
@@ -159,7 +165,6 @@ main {
 
     .hb {
         display: block;
-        
         font-size: 30px; /* Adjust the font size for the hamburger icon */
        position: absolute;
        right: 0;
@@ -168,7 +173,9 @@ main {
         color:white;
         text-decoration: none;
     }
-   
+    .body{
+    overflow: hidden;
+   }
    
 
   
